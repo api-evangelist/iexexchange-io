@@ -1,25 +1,66 @@
 aid: iexexchange-io
+
 name: IEX
-description: 'IEX is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by ivp) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/63bc910a330e72662c5681bc/640645b90ac2aca1a1409fa6_IEX_Open-Graph.jpg
+
+description: 'IEX Group, Inc. operates the IEX Exchange, a U.S. equities market focused on providing fair and transparent trading. The company offers market data, trading venues, and technology solutions for investors and institutions. IEX emphasizes speed bumps to reduce predatory high‑frequency trading, and provides APIs for market data, order routing, and analytics. It is publicly known for its mission to level the playing field for all market participants.'
+
 url: https://raw.githubusercontent.com/api-evangelist/iexexchange-io/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
-- Company
-apis: []
+- Finance
+- Stock Market
+- Trading
+- Market Data
+- Technology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- ivp
+
 common:
+- type: Hosts
+  url: hosts/iexexchange-io-hosts.yml
+- type: Vendors
+  url: vendors/iexexchange-io-vendors.yml
+- type: TermsOfService
+  url: https://www.iex.io/legal/terms
+- type: StatusPage
+  url: https://notifications.iex.io/status
+- type: PrivacyPolicy
+  url: https://www.iex.io/legal/privacy
+- type: Pricing
+  url: https://www.iex.io/documents/pricing-tier-aceess-fee-reform
+- type: Newsroom
+  url: https://www.iex.io/news
+- type: DomainSecurity
+  url: security/iexexchange-io-domain-security.yml
 - type: Website
   url: https://www.iexexchange.io
+
+apis: []
+
+x-backed-by:
+- ivp
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

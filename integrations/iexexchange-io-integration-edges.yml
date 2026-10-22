@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/iexexchange-io/integrations
+- https://zapier.com/apps/iexexchange/integrations
+- https://zapier.com/apps/iex/integrations
+- https://n8n.io/integrations/iexexchange-io/
+- https://n8n.io/integrations/iexexchange/
+- https://composio.dev/toolkits/iexexchange-io
+- https://monid.ai/tools/iexexchange-io
+checked:
+- https://composio.dev/toolkits/iexexchange-io
+- https://monid.ai/tools/iexexchange-io
+- https://n8n.io/integrations/iexexchange-io/
+- https://n8n.io/integrations/iexexchange/
+- https://zapier.com/apps/iex/integrations
+- https://zapier.com/apps/iexexchange-io/integrations
+- https://zapier.com/apps/iexexchange/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

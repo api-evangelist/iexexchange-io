@@ -1,0 +1,71 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 2
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - status
+  - website
+hosts:
+- host: api.iex.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: iex.io
+  role: api
+  relation: other-domain
+- host: api.iexexchange.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: iexexchange.io
+  role: api
+  relation: own
+- host: notifications.iex.io
+  found_by:
+  - pointer
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: iex.io
+  role: status
+  relation: other-domain
+- host: www.iex.io
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Pricing
+  - Newsroom
+  serves: []
+  registrable_domain: iex.io
+  role: marketing
+  relation: other-domain
+- host: www.iexexchange.io
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: iexexchange.io
+  role: website
+  relation: own
